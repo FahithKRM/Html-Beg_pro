@@ -1,0 +1,17 @@
+<h1>Online Calculator</h1>
+<input type="text" id="num1" style="color: blue;">
+<input type="text" id="num2" style="color: blue;">
+<h4>Answer : </h4>
+<h4 id="result" style="color: red;">0</h4>
+<button onclick="Add()">Add</button>
+
+<script>
+    function Add(){
+        var total = Number((document.getElementById("num1")).value) +
+        Number((document.getElementById("num2")).value)
+
+        result.textContent = total
+    }
+</script>
+
+<script src="tem.js"></script>

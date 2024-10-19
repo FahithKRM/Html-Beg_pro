@@ -1,0 +1,9 @@
+<input type="text" id="value" onkeyup="Change()">
+<h1 id="result"></h1>
+<script>
+    var value = document.getElementById("value")
+    var result= document.getElementById("result")
+    function Change(){
+        result.textContent = value.value
+    }
+</script>

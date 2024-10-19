@@ -1,0 +1,31 @@
+<div id="div" style="color: red;">
+    <h1 style="color: blue;">Welcome</h1>
+    <h1 style="color: blue;">Nice</h1>
+    <h1 style="color: blue;">Clear!</h1>
+</div>
+
+<script>
+    var div = document.querySelector("#div")//select the div id
+
+    //before div starting
+    var text1 = document.createElement("h1")
+    text1.textContent = "Good Job"
+    div.insertAdjacentElement("beforebegin", text1)
+
+    //inside and before ending the div
+    var text2 = document.createElement("h1")
+    text2.textContent = "More Practice"
+    div.insertAdjacentElement("beforeend", text2)
+    
+    //inside and beginning the div 
+    var text3 = document.createElement("h1")
+    text3.textContent = "Understanding........"
+    div.insertAdjacentElement("afterbegin", text3)
+
+    //after and end of the div
+    var text4 = document.createElement("h1")
+    text4.textContent = "Thing......"
+    div.insertAdjacentElement("afterend", text4)
+    
+
+</script>

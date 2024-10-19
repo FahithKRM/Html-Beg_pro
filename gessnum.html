@@ -1,0 +1,21 @@
+<h1>Guss the number from 1 to 10</h1>
+
+<input type="text" id="num">
+<button onclick="Check()">Check</button>
+<p id="result">Gussing is wrong/ Right</p>
+<p id="score">Your score : 10</p>
+
+<script>
+        var totalscore = 10
+    function Check(){
+        var guss = Number((document.getElementById("num")).value)
+        if(guss == (Math.floor(Math.random()*10+1))){
+            result.textContent = "You are right"
+            alert("Your gussing is right")
+        }else{
+            totalscore = totalscore-1
+            result.textContent = "You are wrong"
+            score.textContent = "Your score : " + totalscore
+        }
+    }
+</script>

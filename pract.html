@@ -1,0 +1,23 @@
+<style>
+    #box{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        transition: width 2s;
+    }
+    .size{
+        width: 900px;
+        
+    }
+</style>
+
+<div id="box"></div>
+<button onclick="Click()">Change</button>
+
+<script>
+    var box = document.getElementById("box")
+    function Click(){
+        box.classList.toggle("size")
+    }
+</script>

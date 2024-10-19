@@ -1,0 +1,16 @@
+<h1 id="heading"></h1>
+<button id="button1" onclick="Change(event)">Fahith K.R.M.</button>
+<button id="button2" onclick="Change(event)">K.R. Mohamed Fahith</button>
+<button id="button3" onclick="Change(event)">Kalil Rahuman Mohamed Fahith</button>
+
+
+<script>
+    var heading = document.getElementById("heading")
+    var button1 = document.getElementById("button1")
+    var button2 = document.getElementById("button2")
+    var button3 = document.getElementById("button3")
+
+    function Change(event){
+        heading.textContent = event.target.textContent
+    }
+</script>

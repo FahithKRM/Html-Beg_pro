@@ -1,0 +1,19 @@
+<div id="div" style="color: red">
+  <h1 style="color: blue">Welcome</h1>
+  <h1 style="color: blue">Nice</h1>
+  <h1 style="color: blue">Clear!</h1>
+</div>
+
+<script>
+  var div = document.querySelector("#div");
+
+  //starting and inside the div
+  var text1 = document.createElement("h1");
+  text1.textContent = "Example 1";
+  div.prepend(text1);
+
+  //starting and inside the div
+  var text2 = document.createElement("h1");
+  text2.textContent = "Example 2";
+  div.prepend(text2);
+</script>
